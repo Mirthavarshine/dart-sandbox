@@ -1,0 +1,8 @@
+name: student_management
+version: 0.1.0
+description: A Dart practice project for student management and payment processing.
+environment:
+  sdk: '>=2.19.0 <3.0.0'
+
+dependencies:
+  # Add package dependencies here if required.

@@ -1,0 +1,14 @@
+{
+  "roots": [
+    "student_management"
+  ],
+  "packages": [
+    {
+      "name": "student_management",
+      "version": "0.1.0",
+      "dependencies": [],
+      "devDependencies": []
+    }
+  ],
+  "configVersion": 1
+}

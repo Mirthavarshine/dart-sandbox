@@ -98,5 +98,5 @@ void printEmployee(Employee emp) {
   print("Leaves: ${emp.leaves}");
   print("Final Salary: ₹${emp.calculateSalary()}");
   print("Performance: ${emp.getPerformance(emp.leaves)}");
-  print("----------------------------");
+  print("-----------------------------");
 }
