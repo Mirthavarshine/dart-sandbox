@@ -117,37 +117,58 @@ print('Frequency: $frequency');
 
 // student result system 
 // Where method 
+// where method is used to filter elements from a collection based on a condition. It returns a new iterable containing only the elements that satisfy the specified condition.
+// filter the list of numbers greater than 30 and print the filtered list
+// filter the list of students who scored more than 80 marks and print their names
 List<int> number = [23,34,35,21,3,5,45,6,546,3465,67,11,34];
 var filterNumber = number.where((num) => num > 30);
 print(filterNumber);
 // Built in method in collection 
+//map define a list of numbers and use map to create a new list with each number squared and print the new list
 // map 
 List<int> Number = [1, 2, 3, 4, 5];
 var doubledNumbers = Number.map((num) => num * 2);
 print(doubledNumbers);
 // Any 
+// any method is used to check if at least one element in a collection satisfies a given condition. It returns true if any element meets the condition, and false otherwise.
 List<int> valueScores = [40, 55, 80];
 bool valued  = valueScores.any((s) => s >= 75); 
 print(valued);
 // every 
+// every method is used to check if all elements in a collection satisfy a given condition. It returns true if every element meets the condition, and false otherwise.
 List<int> everyScores = [40, 55, 80];
 bool everyValued = everyScores.every((s) => s >= 40);
 print(everyValued);
 // Firstwhere 
+// firstWhere method is used to find the first element in a collection that satisfies a given condition. It returns the first matching element, or throws an error if no such element is found.
 List<int> firstScores = [40, 55, 80];
 int firstValued = firstScores.firstWhere((s) => s >= 50);
 print(firstValued);
 //lastwhere
+// lastWhere method is used to find the last element in a collection that satisfies a given condition. It returns the last matching element, or throws an error if no such element is found.
 List<int> lastScores = [40, 55, 80 ,50,45,60 ];
 int lastValued = lastScores.lastWhere((s) => s >= 50);
 print(lastValued);
 //reduce and fold 
+// reduce method is used to combine all elements of a collection into a single value by applying a specified function. It takes a binary function that operates on two elements and returns a single result. The reduce method processes the elements in order, starting with the first two elements and then combining the result with the next element until all elements have been processed.
+// fold method is similar to reduce but allows you to specify an initial value. It takes an initial value and a binary function that operates on the accumulated value and the current element. The fold method processes the elements in order, starting with the initial value and then combining it with each element until all elements have been processed.
 List<int> reduceScores = [40, 55, 80];
 int redScore = reduceScores.reduce((a, b) => a + b);
 print(redScore);
 List<int> foldScores = [40, 55, 80];
 int totalFoldScore = foldScores.fold(0, (a, b) => a + b);
 print(totalFoldScore);
+// sort
+// sort method is used to sort the elements of a collection in a specific order. It modifies the original collection and sorts the elements based on their natural ordering (for numbers, it sorts in ascending order; for strings, it sorts alphabetically). You can also provide a custom sorting function to define the sorting criteria.
+List<int> unsortedNumbers = [5, 2, 9, 1, 5, 6];
+unsortedNumbers.sort();
+print(unsortedNumbers);
+//contains
+// contains method is used to check if a collection contains a specific element. It returns true if the element is found in the collection, and false otherwise.
+List<String> namesList = ['Alice', 'Bob', 'Charlie'];
+bool containsBob = namesList.contains('Bob');
+print(containsBob);
+
 
 // set 
 var setAA = {1, 2, 3};
